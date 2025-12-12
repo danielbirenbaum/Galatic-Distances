@@ -203,3 +203,7 @@ De tal maneira que:
 ```math
 \hat{X} = R\Lambda^{\frac{1}{2}}U^T
 ```
+
+Como resultado:
+
+![alt text](image.png)
