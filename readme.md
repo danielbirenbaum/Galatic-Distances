@@ -31,53 +31,53 @@ Entende-se que $G = G^T$, portanto simétrico.
 Percebe-se também, que a matriz $X = [x_1 \ \ x_2 \ \ x_3 \ \ ... \ \ x_{27}]$ possui _rank_ $r(X)= 2$ pois $x_i = [x_{1i} \ \ x_{2i}]^T$. O span da matriz $X$, portanto, é no máximo, o $\R^2$, visto que se houver duas colunas linearmente independentes, será possível alcançar o $\R^2$. 
 
 Sabe-se que o $r(X)= r(X^TX)$:
-$$
+```math
 Xv = 0 \Rightarrow X^TXv = 0\Rightarrow (X^TXv)^T = 0 \Rightarrow v^TX^TX = 0 \Rightarrow v^TX^TXv = 0 \\ \Rightarrow (Xv)^T(Xv) = 0 \Rightarrow \parallel Xv \parallel^2 = 0
-$$
+```
 
 $X^TX$ possui o mesmo espaço nulo que X. 
 
-$$
+```math
 ker(X) = ker(X^TX) \\
 r(X) + ker(X) = 27 \\
 r(X^TX) + ker(X^TX) = 27 \\
 r(X) = r(X^TX)
-$$
+```
 
 Portanto, $G$ possui _rank_ igual ao da matriz $X$. $G$ é simétrica, e possui _rank_ de no máximo 2, logo terá no máximo 2 autovalores não nulos que formem, com os autovetores, o espaço coluna.
 
 ### Análise do operador linear $P$
 
 Sabe-se que $P$ é idempotente, $P = P^2$, seja $\lambda$ e $v$ um autovalor e um autovetor de $P$:
-$$
+```math
 Pv = \lambda v \Rightarrow P^2v = P \lambda v \Rightarrow P^2v = \lambda^2v \\
 \lambda v = \lambda^2v \\
 \lambda^2 - \lambda = 0 \\
 \lambda_1 = 0 \ \ \ \ \lambda_2 = 1
-$$
+```
 
 Logo, somente é possível que os autovalores de $P$ assumam $0$ ou $1$. Para definir o autovetor a $\lambda = 0$, usa-se a definição de $P$, seja $u = [1 \ \ 1 \ \ 1 \ ...\  1]^T$:
-$$
+```math
 Pu = u - \frac{\sum_{l=1}^n u_l}{n} \cdot \textbf{1} \\[1em]
 \frac{\sum_{l=1}^n u_l}{n} = 1 \\[1em]
 Pu = u - \textbf{1} \\[1em]
 Pu = 0
-$$
+```
 
 Portanto, o $u = [1 \ \ 1 \ \ 1 \ ...\  1]^T$ é autovetor referente a $\lambda = 0$, o que é notório se considerarmos que a matriz $P$ projeta vetores $u$ ao espaço ortogonal ao espaço gerado pelo vetor de **1**'s.
 
 Os vetores $v$ cujos produtos internos com **1** sejam zero, devem estar no espaço coluna de $P$, portanto:
-$$
+```math
 \textbf{1}^Tv = 0 \\[1em]
 Pv = (I - \frac{\textbf{1}\textbf{1}^T}{n})v \\[1em] 
 Pv = v - \frac{\textbf{1}(\textbf{1}^Tv)}{n} \\[1em]
 Pv = v
-$$
+```
 
 Logo vetores do tipo $v_{i=1} = [-1 \ \ 1 \ \ 0 \ \ ... \ \ 0]^T$, $v_{i=2} = [-1 \ \ 0 \ \ 1 \ \ ... \ \ 0]^T$,etc... Serão autovetores de $P$ para $\lambda = 1$. Os resultados são coerentes com aqueles computados no arquivo .py.
 
 Seja $A = \frac{\textbf{1}\textbf{1}^T}{n}$ a matriz de projeção que induz $P$:
-$$
+```math
 A = VLV^{-1} \\[1em]
 L =
 \begin{bmatrix}
@@ -94,7 +94,7 @@ V=
 \vdots & \vdots & \ddots & \vdots \\
 0 & 0 & \cdots & 1
 \end{bmatrix}
-$$
+```
 
 - $V$ possui os mesmos autovetores $v_i$ de P
 
