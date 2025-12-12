@@ -32,16 +32,16 @@ Percebe-se também, que a matriz $X = [x_1 \ \ x_2 \ \ x_3 \ \ ... \ \ x_{27}]$ 
 
 Sabe-se que o $r(X)= r(X^TX)$:
 ```math
-Xv = 0 \Rightarrow X^TXv = 0\Rightarrow (X^TXv)^T = 0 \Rightarrow v^TX^TX = 0 \Rightarrow v^TX^TXv = 0 \\ 
+Xv = 0 \Rightarrow X^TXv = 0\Rightarrow (X^TXv)^T = 0 \Rightarrow v^TX^TX = 0 \Rightarrow v^TX^TXv = 0 \newline 
 \Rightarrow (Xv)^T(Xv) = 0 \Rightarrow \parallel Xv \parallel^2 = 0
 ```
 
 $X^TX$ possui o mesmo espaço nulo que X. 
 
 ```math
-ker(X) = ker(X^TX) \\\\
-r(X) + ker(X) = 27 \\\\
-r(X^TX) + ker(X^TX) = 27 \\\\
+ker(X) = ker(X^TX) \newline
+r(X) + ker(X) = 27 \newline
+r(X^TX) + ker(X^TX) = 27 \newline
 r(X) = r(X^TX)
 ```
 
