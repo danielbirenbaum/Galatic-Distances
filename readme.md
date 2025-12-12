@@ -138,7 +138,7 @@ Com uma analogia dos hexágonos, se $P$ fosse invertível, seria possível para 
 
 Para os vetores $v$ que não possuem componentes em **1**, a projeção não modificará nada no vetor. Da mesma maneira que, dados dois vetores $u$ e $v$ já no espaço ortogonal a **1**, não haverá distorções em suas distâncias relativas. Como $P$ diminui para cada vetor a média de seus valores, os vetores apenas serão transladados.
 
-Para o cálculo de $\^X$, será necessário uma matriz de rotação para que as posições se enquadrem na hipótese de que se sobrepõem sobre o mapa do Brasil:
+Para o cálculo de $\hat{X}$, será necessário uma matriz de rotação para que as posições se enquadrem na hipótese de que se sobrepõem sobre o mapa do Brasil:
 
 ```math
 R = 
@@ -150,7 +150,7 @@ R =
 
 A modificação de $+\frac{\pi}{2}$ foi necessária, pois, provavelmente, há diferenças de coordenadas do Julia pro Numpy do Python
 
-Além de uma matriz com os dois maiores autovetores de $\^G$, $U$:
+Além de uma matriz com os dois maiores autovetores de $\hat{G}$, $U$:
 
 ```math
 U = \begin{bmatrix}
@@ -201,19 +201,5 @@ E também a matriz $\Lambda^{\frac{1}{2}}$:
 
 De tal maneira que:
 ```math
-\^X = R\Lambda^{\frac{1}{2}}U^T
-```
-
-Ou seja:
-
-```math
-\^X =
-\begin{bmatrix}
-\cos(\frac{-\pi}{1.4} + \frac{\pi}{2}) & -\sin(\frac{-\pi}{1.4} + \frac{\pi}{2}) \\ 
-\sin(\frac{-\pi}{1.4} + \frac{\pi}{2}) & \cos(\frac{-\pi}{1.4} + \frac{\pi}{2})
-\end{bmatrix}
-\begin{bmatrix}
-\sqrt(0.00942336461994949) & 0 \\
-0 & \sqrt(0.00915173286243786)
-\end{bmatrix}
+\hat{X} = R\Lambda^{\frac{1}{2}}U^T
 ```
