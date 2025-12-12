@@ -41,9 +41,15 @@ Xv = 0 \Rightarrow X^TXv = 0\Rightarrow (X^TXv)^T = 0 \Rightarrow v^TX^TX = 0 \R
 $X^TX$ possui o mesmo espaço nulo que X. 
 
 ```math
-ker(X) = ker(X^TX) \newline
-r(X) + ker(X) = 27 \newline
-r(X^TX) + ker(X^TX) = 27 \newline
+ker(X) = ker(X^TX) 
+```
+```math
+r(X) + ker(X) = 27 
+```
+```math
+r(X^TX) + ker(X^TX) = 27
+```
+```math
 r(X) = r(X^TX)
 ```
 
@@ -53,17 +59,29 @@ Portanto, $G$ possui _rank_ igual ao da matriz $X$. $G$ é simétrica, e possui 
 
 Sabe-se que $P$ é idempotente, $P = P^2$, seja $\lambda$ e $v$ um autovalor e um autovetor de $P$:
 ```math
-Pv = \lambda v \Rightarrow P^2v = P \lambda v \Rightarrow P^2v = \lambda^2v \\
-\lambda v = \lambda^2v \\
-\lambda^2 - \lambda = 0 \\
+Pv = \lambda v \Rightarrow P^2v = P \lambda v \Rightarrow P^2v = \lambda^2v 
+```
+```math
+\lambda v = \lambda^2v 
+```
+```math
+\lambda^2 - \lambda = 0 
+```
+```math
 \lambda_1 = 0 \ \ \ \ \lambda_2 = 1
 ```
 
 Logo, somente é possível que os autovalores de $P$ assumam $0$ ou $1$. Para definir o autovetor a $\lambda = 0$, usa-se a definição de $P$, seja $u = [1 \ \ 1 \ \ 1 \ ...\  1]^T$:
 ```math
-Pu = u - \frac{\sum_{l=1}^n u_l}{n} \cdot \textbf{1} \\[1em]
-\frac{\sum_{l=1}^n u_l}{n} = 1 \\[1em]
-Pu = u - \textbf{1} \\[1em]
+Pu = u - \frac{\sum_{l=1}^n u_l}{n} \cdot \mathbf{1} 
+```
+```math
+\frac{\sum_{l=1}^n u_l}{n} = 1
+```
+```math
+Pu = u - \mathbf{1}
+```
+```math
 Pu = 0
 ```
 
@@ -71,17 +89,25 @@ Portanto, o $u = [1 \ \ 1 \ \ 1 \ ...\  1]^T$ é autovetor referente a $\lambda 
 
 Os vetores $v$ cujos produtos internos com **1** sejam zero, devem estar no espaço coluna de $P$, portanto:
 ```math
-\textbf{1}^Tv = 0 \\[1em]
-Pv = (I - \frac{\textbf{1}\textbf{1}^T}{n})v \\[1em] 
-Pv = v - \frac{\textbf{1}(\textbf{1}^Tv)}{n} \\[1em]
+\mathbf{1}^Tv = 0 
+```
+```math
+Pv = (I - \frac{\mathbf{1}\mathbf{1}^T}{n})v  
+```
+```math
+Pv = v - \frac{\mathbf{1}(\mathbf{1}^Tv)}{n} 
+```
+```math
 Pv = v
 ```
 
 Logo vetores do tipo $v_{i=1} = [-1 \ \ 1 \ \ 0 \ \ ... \ \ 0]^T$, $v_{i=2} = [-1 \ \ 0 \ \ 1 \ \ ... \ \ 0]^T$,etc... Serão autovetores de $P$ para $\lambda = 1$. Os resultados são coerentes com aqueles computados no arquivo .py.
 
-Seja $A = \frac{\textbf{1}\textbf{1}^T}{n}$ a matriz de projeção que induz $P$:
+Seja $A = \frac{\mathbf{1}\mathbf{1}^T}{n}$ a matriz de projeção que induz $P$:
 ```math
-A = VLV^{-1} \\[1em]
+A = VLV^{-1} 
+```
+```math
 L =
 \begin{bmatrix}
 0 & 0 & \cdots &0 \\
@@ -90,6 +116,8 @@ L =
 0 & 0 & \cdots & 1
 \end{bmatrix}
 \\[1em]
+```
+```math
 V=
 \begin{bmatrix}
 -1 & -1 & \cdots &1 \\
