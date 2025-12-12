@@ -207,3 +207,5 @@ De tal maneira que:
 Como resultado:
 
 ![alt text](image.png)
+
+Finalmente, podemos definir $\hat{D}$ como as distâncias a partir de $\hat{X}$ tomando para cada elemento $\hat{D}$ as distâncias euclidianas. O Resultado pode ser conferido em [DistanciasGalaticas.ipynb](https://github.com/danielbirenbaum/Galatic-Distances/blob/master/DistanciasGalaticas.ipynb) no último bloco de código. Os valores encontrados são extremamente próximos aos da matriz original $D$, portanto, a aproximação é válida.
