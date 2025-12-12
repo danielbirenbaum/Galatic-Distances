@@ -9,12 +9,15 @@ $d_{ij} = f(x_i,x_j) = \sqrt{(x_{1i} - x_{1j})^2 + (x_{2i} - x_{2j})^2}$
 
 Define-se $D_f$, $C_f$ e $I_f$ como domínio, contradomínio e conjunto imagem da função $f$.
 
-$D_f = \{ x_{1i},x_{1j},x_{2i},x_{2j} \in \mathbb{R};\ x = (x_1,x_2)\in \mathbb{R^2} \}$
-
-$C_F =\{ \mathbb{R_{\ge0}} \} $
-
-$I_f = \{ d_{ij} = f(x_i,x_j);\ d_{ij} \in [0,\infty] \}$
-
+```math
+D_f = \{ x_{1i},x_{1j},x_{2i},x_{2j} \in \mathbb{R};\ x = (x_1,x_2)\in \mathbb{R^2} \}
+```
+```math
+C_F = \mathbb{R_{\ge0}} 
+```
+```math
+I_f = \{ d_{ij} = f(x_i,x_j);\ d_{ij} \in [0,\infty] \}
+```
 Se $x_{i} = [x_{1i} \ \ x_{2i}]^T$ são os elmenetos da matriz $X = [x_1 \ \ x_2 \ \ x_3 \ \ ... \ \ x_{27}]$, $X$ é $2\times27$, $X^T$ é $27\times2$. Logo $X^TX$ é quadrada de dimensão $n\times n$ com $n = 27$.
 Define-se $G = X^T X$, perceba:
 
