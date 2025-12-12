@@ -28,19 +28,20 @@ G= X^TX \Rightarrow G^T = (X^TX)^T \Rightarrow G^T = X^TX = G
 
 Entende-se que $G = G^T$, portanto simétrico.
 
-Percebe-se também, que a matriz $X = [x_1 \ \ x_2 \ \ x_3 \ \ ... \ \ x_{27}]$ possui _rank_ $r(X)= 2$ pois $x_i = [x_{1i} \ \ x_{2i}]^T$. O span da matriz $X$, portanto, é no máximo, o $\R^2$, visto que se houver duas colunas linearmente independentes, será possível alcançar o $\R^2$. 
+Percebe-se também, que a matriz $X = [x_1 \ \ x_2 \ \ x_3 \ \ ... \ \ x_{27}]$ possui _rank_ $r(X)= 2$ pois $x_i = [x_{1i} \ \ x_{2i}]^T$. O span da matriz $X$, portanto, é no máximo, o $\mathbb{R}^2$, visto que se houver duas colunas linearmente independentes, será possível alcançar o $\mathbb{R}^2$. 
 
 Sabe-se que o $r(X)= r(X^TX)$:
 ```math
-Xv = 0 \Rightarrow X^TXv = 0\Rightarrow (X^TXv)^T = 0 \Rightarrow v^TX^TX = 0 \Rightarrow v^TX^TXv = 0 \\ \Rightarrow (Xv)^T(Xv) = 0 \Rightarrow \parallel Xv \parallel^2 = 0
+Xv = 0 \Rightarrow X^TXv = 0\Rightarrow (X^TXv)^T = 0 \Rightarrow v^TX^TX = 0 \Rightarrow v^TX^TXv = 0 \\ 
+\Rightarrow (Xv)^T(Xv) = 0 \Rightarrow \parallel Xv \parallel^2 = 0
 ```
 
 $X^TX$ possui o mesmo espaço nulo que X. 
 
 ```math
-ker(X) = ker(X^TX) \\
-r(X) + ker(X) = 27 \\
-r(X^TX) + ker(X^TX) = 27 \\
+ker(X) = ker(X^TX) \\\\
+r(X) + ker(X) = 27 \\\\
+r(X^TX) + ker(X^TX) = 27 \\\\
 r(X) = r(X^TX)
 ```
 
