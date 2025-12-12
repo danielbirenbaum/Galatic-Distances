@@ -17,9 +17,14 @@ $I_f = \{d_{ij} = f(x_i,x_j);\ d_{ij} \in [0,\infty] \}$
 
 Se $x_{i} = [x_{1i} \ \ x_{2i}]^T$ são os elmenetos da matriz $X = [x_1 \ \ x_2 \ \ x_3 \ \ ... \ \ x_{27}]$, $X$ é $2\times27$, $X^T$ é $27\times2$. Logo $X^TX$ é quadrada de dimensão $n\times n$ com $n = 27$.
 Define-se $G = X^T X$, perceba:
-$$
+
+```math
+
 G= X^TX \Rightarrow G^T = (X^TX)^T \Rightarrow G^T = X^TX = G
-$$
+
+```
+
+
 
 Entende-se que $G = G^T$, portanto simétrico.
 
